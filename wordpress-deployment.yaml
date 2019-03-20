@@ -5,8 +5,8 @@ metadata:
   labels:
     app: wordpress
 spec:
-  type: NodePort
-  NodePort: 30123 
+  ports:
+    - port: 80
   selector:
     app: wordpress
     tier: frontend
